@@ -20,10 +20,10 @@
 
 // Definitions //
 
-#define BASE 0
-#define LOWER 1
-#define RAISE 2
-#define NAV 3
+#define base_layer 0
+#define lower_layer 1
+#define raise_layer 2
+#define nav_layer 3
 
 #define _____ &trans
 #define slashP &th LS(SLASH) P
