@@ -37,61 +37,61 @@
         compatible = "zmk,combos";
 
         combo_enter {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp RETURN>;
             key-positions = <17 18 19>;
         };
 
         ctrl-backspace {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <31 32 33>;
         };
 
         left-parenthesis {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <6 7>;
         };
 
         right-parenthesis {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
         };
 
         left-bracket {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 18>;
         };
 
         right-bracket {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
         };
 
         left-brace {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp LEFT_BRACE>;
             key-positions = <31 32>;
         };
 
         right-brace {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <32 33>;
         };
 
         combo_colon {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&kp SEMI>;
             key-positions = <19 20>;
         };
 
         combo_angle {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             bindings = <&angle_morph>;
             key-positions = <17 19>;
         };
@@ -246,7 +246,7 @@
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
    │   TAB   │    N    │    R    │    T    │    S    │    G    │                    │    Y    │    H    │    A    │    E    │    I    │    ,    │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │   1     │    Q    │    X    │    M    │    C    │    V    ││  MUTE  ││PLY/PSE ││    K    │    P    │    .    │    -    │    /    │   ESC   │
+   │   4     │    Q    │    X    │    M    │    C    │    V    ││  MUTE  ││PLY/PSE ││    K    │    P    │    .    │    -    │    /    │   ESC   │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │    1    │  BACK   │  SHIFT  │ CMD/WIN ││ CMD/WIN │  ENTER  │  SPACE  │    2    │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
@@ -254,7 +254,7 @@
             bindings = <
              &kp B    &kp L         &kp D         &HML LGUI W    &kp Z                           &kp SQT    &HMR LGUI F  &kp O          &kp U          &kp J
     &kp TAB  &lt 2 N  &HML LCTRL R  &HML LALT T   &lt 3 S        &kp G                           &kp Y      &lt 3 H      &HMR LALT A    &HMR LCTRL E   &lt 2 I    &kp COMMA
-    &tog 1   &kp Q    &kp X         &kp M         &kp C          &kp V   &kp C_MUTE  &kp C_PP    &kp K      slashP       &kp PERIOD     &kp MINUS      &kp SLASH  &kp ESCAPE
+    &tog 1   &kp Q    &kp X         &kp M         &kp C          &kp V       &trans    &trans    &kp K      slashP       &kp PERIOD     &kp MINUS      &kp SLASH  &kp ESCAPE
                       &mo 1         &kp BACKSPACE &kp LSHIFT     &trans                          &trans     HYPEReturn   MehSpace       &mo 2
             >;
 
@@ -325,7 +325,7 @@
             label = "Nav";
             bindings = <
                     &trans       &kp LC(TAB)  &kp DELETE   &kp C_MUTE    &kp PG_UP                   &kp PG_DN       &kp LC(C)       &kp UP        &kp LC(V)     &trans
-        &trans      &kp ESCAPE   &kp TAB      &trans       &kp C_VOL_UP  &trans                      &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT     &kp LC(EQUAL)  &trans
+        &trans      &kp ESCAPE   &kp TAB      &trans       &kp C_VOL_UP  &trans                      &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT    &kp LC(EQUAL)  &trans
         &trans      &trans       &trans       &trans       &kp C_VOL_DN  &trans      &trans  &trans  &trans          &trans          &kp CAPSLOCK  &trans        &kp LC(MINUS)  &trans
                                  &trans       &trans       &trans        &trans                      &trans          &trans          &trans        &trans
             >;
