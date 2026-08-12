@@ -1,5 +1,7 @@
 // klor (standard) -- all content lives in keymap_core.dtsi, shared by every board.
+// The only one of the three klors built with its two knobs fitted.
 #define HAS_GAMING
+#define HAS_ENCODER
 #define HAS_TWO_ENCODERS
 #include "layout_klor.dtsi"
 #include "keymap_core.dtsi"
