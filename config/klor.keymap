@@ -1,3 +1,4 @@
-// klor -- all content lives in keymap_core.dtsi, shared by every board.
+// klor (standard) -- all content lives in keymap_core.dtsi, shared by every board.
+#define HAS_GAMING
 #include "layout_klor.dtsi"
 #include "keymap_core.dtsi"

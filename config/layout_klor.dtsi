@@ -73,4 +73,6 @@
 
 #define HAS_ENCODER
 #define HAS_OUTER_R3
-#define HAS_GAMING
+// HAS_GAMING and HAS_QWERTY are not set here. All three klors share this
+// file because they are the same board electrically, but they don't all
+// want the same optional layers, so each one sets that in its own keymap.
